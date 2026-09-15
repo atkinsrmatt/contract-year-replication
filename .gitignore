@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Data. The analysis panel is derived from FanGraphs and Cot's Baseball
+# Contracts and is not ours to redistribute. See data/README.md for how to
+# reconstruct it. Nothing in data/ is tracked except that README.
+# ---------------------------------------------------------------------------
+data/*
+!data/README.md
+
+# ---------------------------------------------------------------------------
+# Everything the pipeline writes. Reproducible by definition, so keeping it
+# under version control only creates diff noise and merge conflicts.
+# ---------------------------------------------------------------------------
+output/*
+!output/.gitkeep
+
+# ---------------------------------------------------------------------------
+# R
+# ---------------------------------------------------------------------------
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+*.rds
+.Renviron
+
+# ---------------------------------------------------------------------------
+# LaTeX build artifacts, if you compile the manuscript alongside this
+# ---------------------------------------------------------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# ---------------------------------------------------------------------------
+# Editors and operating systems
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*~
+*.swp
