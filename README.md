@@ -74,7 +74,7 @@ tests of selection into contract-year status.
 ### felm()
 
 `R/00_functions.R` implements clustered fixed-effects estimation directly,
-reproducing Stata's `xtreg, fe cluster()`. Two things are easy to get wrong:
+reproducing Stata's `xtreg, fe cluster()`.
 
 - K in the small-sample adjustment excludes the absorbed fixed effects.
   Including them, which is what `areg` does, gives standard errors about 17%
