@@ -90,7 +90,7 @@ the degrees-of-freedom question entirely.
 
 An earlier build of this analysis returned the opposite sign on a key
 coefficient with the correct N and player count, because one service-time
-value was wrong. Sample size is not a check. The pipeline gates itself three
+value was wrong. The pipeline gates itself three
 times and will not write tables if a gate fails:
 
 1. `R/01_build.R` checks means, sums and counts of every constructed variable
